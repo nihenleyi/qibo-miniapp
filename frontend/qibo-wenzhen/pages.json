@@ -1,17 +1,106 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	},
-	"uniIdRouter": {}
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": { "navigationBarTitleText": "岐伯中医" }
+    },
+    {
+      "path": "pages/login/login",
+      "style": { "navigationBarTitleText": "登录" }
+    },
+    {
+      "path": "pages/inquiry/index",
+      "style": { "navigationBarTitleText": "中医问诊" }
+    },
+    {
+      "path": "pages/inquiry/info",
+      "style": { "navigationBarTitleText": "基本信息" }
+    },
+    {
+      "path": "pages/inquiry/questions",
+      "style": { "navigationBarTitleText": "中医十问" }
+    },
+    {
+      "path": "pages/inquiry/summary",
+      "style": { "navigationBarTitleText": "问诊摘要" }
+    },
+    {
+      "path": "pages/scan/index",
+      "style": { "navigationBarTitleText": "扫码取药" }
+    },
+    {
+      "path": "pages/scan/result",
+      "style": { "navigationBarTitleText": "药品核对" }
+    },
+    {
+      "path": "pages/qa/index",
+      "style": { "navigationBarTitleText": "健康问答" }
+    },
+    {
+      "path": "pages/qa/result",
+      "style": { "navigationBarTitleText": "问答结果" }
+    },
+    {
+      "path": "pages/my/index",
+      "style": { "navigationBarTitleText": "我的" }
+    },
+    {
+      "path": "pages/my/records",
+      "style": { "navigationBarTitleText": "问诊记录" }
+    },
+    {
+      "path": "pages/my/prescriptions",
+      "style": { "navigationBarTitleText": "我的处方" }
+    },
+    {
+      "path": "pages/my/family",
+      "style": { "navigationBarTitleText": "家庭成员" }
+    },
+    {
+      "path": "pages/my/health",
+      "style": { "navigationBarTitleText": "健康档案" }
+    },
+    {
+      "path": "pages/my/settings",
+      "style": { "navigationBarTitleText": "设置" }
+    }
+  ],
+  "tabBar": {
+    "color": "#8C8C8C",
+    "selectedColor": "#2B7FFF",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tab/home.png",
+        "selectedIconPath": "static/tab/home_active.png"
+      },
+      {
+        "pagePath": "pages/inquiry/index",
+        "text": "问诊",
+        "iconPath": "static/tab/inquiry.png",
+        "selectedIconPath": "static/tab/inquiry_active.png"
+      },
+      {
+        "pagePath": "pages/qa/index",
+        "text": "问答",
+        "iconPath": "static/tab/qa.png",
+        "selectedIconPath": "static/tab/qa_active.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "static/tab/my.png",
+        "selectedIconPath": "static/tab/my_active.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "岐伯中医",
+    "navigationBarBackgroundColor": "#FDF8F0",
+    "backgroundColor": "#FDF8F0"
+  }
 }

@@ -74,3 +74,43 @@ $uni-color-subtitle: #555555; // 二级标题颜色
 $uni-font-size-subtitle:26px;
 $uni-color-paragraph: #3F536E; // 文章段落颜色
 $uni-font-size-paragraph:15px;
+// ============================================
+// 岐伯中医 - 全局设计变量
+// ============================================
+
+// 主色
+$primary-blue: #2B7FFF;
+$primary-blue-light: rgba(43, 127, 255, 0.10);
+$primary-blue-gradient: linear-gradient(135deg, #2B7FFF, #1A5FD4);
+
+// 辅助色
+$brown: #D4B896;
+$brown-light: #E8DDD0;
+$brown-dark: #B8A080;
+
+// 背景
+$bg-warm: #FDF8F0;
+$bg-white: #FFFFFF;
+
+// 文字
+$text-primary: #3D3D3D;
+$text-secondary: #8C8C8C;
+
+// 状态
+$success: #52C41A;
+$warning: #FAAD14;
+$danger: #FF4D4F;
+
+// 圆角
+$radius-card: 16pt;
+$radius-btn: 25pt;
+$radius-sm: 8pt;
+
+// 阴影
+$shadow-sm: 0 2pt 8pt rgba(43, 127, 255, 0.06);
+
+page {
+  background-color: $bg-warm;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+  color: $text-primary;
+}
