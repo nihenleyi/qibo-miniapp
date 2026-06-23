@@ -1,7 +1,7 @@
 <template>
   <view class="page-my">
     <view class="user-card">
-      <image class="avatar" src="/static/avatar-default.png" mode="aspectFill"></image>
+      <image class="avatar" src="@/static/avatar-default.png" mode="aspectFill"></image>
       <view class="user-info"><text class="name">{{ userInfo.name || '岐伯用户' }}</text><text class="bio">中医养生爱好者</text></view>
       <text class="edit" @click="editProfile">个人信息 ▸</text>
     </view>
