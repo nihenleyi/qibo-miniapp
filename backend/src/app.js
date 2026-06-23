@@ -28,6 +28,10 @@ async function start() {
 
   // JWT 认证中间件（公开路由自动跳过）
   app.use(authMiddleware)
+  const express = require('express')
+  const app = express()
+// 托管 static 目录
+  app.use('/static', express.static('static'))
 
   // ---- 路由注册 ----
   app.use('/api', require('./routes/auth'))

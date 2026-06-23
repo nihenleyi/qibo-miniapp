@@ -69,7 +69,7 @@ const loadRecords = async () => {
   }
 }
 
-const goToInquiry = () => uni.navigateTo({ url: '/pages/inquiry/index' })
+const goToInquiry = () => uni.switchTab({ url: '/pages/inquiry/index' })
 const goToScan = () => uni.navigateTo({ url: '/pages/scan/index' })
 const goToQA = () => uni.switchTab({ url: '/pages/qa/index' })
 const goToMy = () => uni.switchTab({ url: '/pages/my/index' })
