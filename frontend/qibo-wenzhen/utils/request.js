@@ -1,4 +1,4 @@
-const USE_MOCK = true
+const USE_MOCK = false
 const BASE_URL = 'http://localhost:3000'
 
 let requestCount = 0
@@ -111,5 +111,7 @@ const request = (options) => {
 
 request.get = (url, data) => request({ url, method: 'GET', data })
 request.post = (url, data) => request({ url, method: 'POST', data })
+request.put = (url, data) => request({ url, method: 'PUT', data })
+request.delete = (url, data) => request({ url, method: 'DELETE', data })
 
 export default request
