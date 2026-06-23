@@ -40,7 +40,15 @@ const search = () => {
   goToResult(keyword.value)
 }
 const goToResult = (q) => uni.navigateTo({ url: '/pages/qa/result?q=' + encodeURIComponent(q) })
-const goBack = () => uni.navigateBack()
+const goBack = () => {
+  const pages = getCurrentPages()
+  if (pages.length > 1) {
+    uni.navigateBack()
+  } else {
+    // 没有上一页时，回到首页
+    uni.switchTab({ url: '/pages/index/index' })
+  }
+}
 </script>
 
 <style lang="scss" scoped>
